@@ -101,9 +101,9 @@ jobs:
         with:
           name: legado.${{ env.product }}.${{ env.type }}
           path: ${{ github.workspace }}/apk/*.apk
-     - name: Download a Build Artifact
-       uses: actions/download-artifact@v3.0.1
-       with:
+      - name: Download a Build Artifact
+        uses: actions/download-artifact@v3.0.1
+        with:
           name: legado.${{ env.product }}.${{ env.type }}
           path: ${{ github.workspace }}/apk/*.apk
 
